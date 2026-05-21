@@ -1,0 +1,19 @@
+# Dataset caches (large binary files)
+animal_classifier/dataset/oxford_pets_data/
+animal_classifier/dataset/cifar10_data/
+dataset/mnist.pkl
+
+# Trained model weights
+*.pkl
+
+# NumPy cache
+*.npz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/

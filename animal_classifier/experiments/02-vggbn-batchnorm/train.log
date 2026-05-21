@@ -1,0 +1,46 @@
+[VGG + BatchNorm + augmentation]
+
+==================================================
+Training: VGGWithBN
+  train=3680, batch=32, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=3.7670  train=0.0000  test=0.0000  (47s)
+epoch   2/30: loss=3.5949  train=0.0396  test=0.0458  (48s)
+epoch   3/30: loss=3.5572  train=0.0917  test=0.1313  (50s)
+epoch   4/30: loss=3.5109  train=0.1167  test=0.0875  (56s)
+epoch   5/30: loss=3.4883  train=0.0771  test=0.1083  (50s)
+epoch   6/30: loss=3.4765  train=0.1167  test=0.0167  (48s)
+epoch   7/30: loss=3.4620  train=0.0521  test=0.0187  (45s)
+epoch   8/30: loss=3.4537  train=0.1479  test=0.1229  (45s)
+epoch   9/30: loss=3.4319  train=0.1125  test=0.0625  (46s)
+epoch  10/30: loss=3.4224  train=0.0604  test=0.1104  (46s)
+epoch  11/30: loss=3.4238  train=0.0437  test=0.1000  (46s)
+epoch  12/30: loss=3.4209  train=0.0625  test=0.1271  (46s)
+epoch  13/30: loss=3.4238  train=0.0458  test=0.0083  (45s)
+epoch  14/30: loss=3.3908  train=0.1062  test=0.1771  (47s)
+epoch  15/30: loss=3.3858  train=0.1146  test=0.2042  (48s)
+epoch  16/30: loss=3.3815  train=0.0354  test=0.0854  (47s)
+epoch  17/30: loss=3.3817  train=0.0000  test=0.0063  (53s)
+epoch  18/30: loss=3.3639  train=0.0104  test=0.0187  (46s)
+epoch  19/30: loss=3.3619  train=0.0312  test=0.0458  (45s)
+epoch  20/30: loss=3.3573  train=0.0792  test=0.1562  (46s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=3.3474  train=0.0604  test=0.1062  (46s)
+epoch  22/30: loss=3.3158  train=0.0167  test=0.0625  (47s)
+epoch  23/30: loss=3.3181  train=0.0167  test=0.0625  (46s)
+epoch  24/30: loss=3.2907  train=0.0187  test=0.0312  (45s)
+epoch  25/30: loss=3.2947  train=0.0229  test=0.0312  (45s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=3.2863  train=0.0208  test=0.0271  (45s)
+epoch  27/30: loss=3.2946  train=0.0229  test=0.0250  (45s)
+epoch  28/30: loss=3.2985  train=0.0208  test=0.0271  (45s)
+epoch  29/30: loss=3.3083  train=0.0229  test=0.0375  (45s)
+epoch  30/30: loss=3.2920  train=0.0229  test=0.0229  (46s)
+Saved results/VGGWithBN_history.png
+
+Best test acc: 0.2042
+Saved results/VGGWithBN_confusion.png
+Saved results/VGGWithBN_samples.png
+Saved results/VGGWithBN_per_class.png
+  Final Top-1: 0.0403, Top-5: 0.2067

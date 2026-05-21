@@ -1,0 +1,46 @@
+[ResNet skip connections]
+
+==================================================
+Training: ResNet
+  train=3680, batch=32, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=3.6405  train=0.0729  test=0.1062  (126s)
+epoch   2/30: loss=3.3770  train=0.0479  test=0.0917  (124s)
+epoch   3/30: loss=3.2499  train=0.0021  test=0.0000  (123s)
+epoch   4/30: loss=3.1711  train=0.0146  test=0.0000  (124s)
+epoch   5/30: loss=3.0806  train=0.0042  test=0.0021  (121s)
+epoch   6/30: loss=3.0110  train=0.0563  test=0.0042  (123s)
+epoch   7/30: loss=2.9407  train=0.0000  test=0.0000  (122s)
+epoch   8/30: loss=2.8946  train=0.0042  test=0.0000  (123s)
+epoch   9/30: loss=2.7989  train=0.0146  test=0.0000  (122s)
+epoch  10/30: loss=2.7165  train=0.0667  test=0.0021  (122s)
+epoch  11/30: loss=2.6742  train=0.0042  test=0.0000  (125s)
+epoch  12/30: loss=2.5991  train=0.0167  test=0.0000  (125s)
+epoch  13/30: loss=2.5112  train=0.0125  test=0.0021  (129s)
+epoch  14/30: loss=2.4195  train=0.0104  test=0.0083  (130s)
+epoch  15/30: loss=2.3794  train=0.0938  test=0.0250  (129s)
+epoch  16/30: loss=2.2804  train=0.1083  test=0.0146  (125s)
+epoch  17/30: loss=2.1945  train=0.0208  test=0.0000  (120s)
+epoch  18/30: loss=2.1300  train=0.0271  test=0.0021  (120s)
+epoch  19/30: loss=2.0685  train=0.0104  test=0.0000  (120s)
+epoch  20/30: loss=1.9170  train=0.0125  test=0.0021  (120s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=1.6148  train=0.0083  test=0.0021  (120s)
+epoch  22/30: loss=1.5075  train=0.0083  test=0.0021  (120s)
+epoch  23/30: loss=1.4346  train=0.0104  test=0.0021  (121s)
+epoch  24/30: loss=1.4132  train=0.0167  test=0.0021  (122s)
+epoch  25/30: loss=1.3647  train=0.0146  test=0.0021  (122s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=1.3156  train=0.0167  test=0.0042  (121s)
+epoch  27/30: loss=1.3028  train=0.0146  test=0.0042  (121s)
+epoch  28/30: loss=1.2921  train=0.0167  test=0.0042  (121s)
+epoch  29/30: loss=1.2945  train=0.0187  test=0.0042  (121s)
+epoch  30/30: loss=1.2954  train=0.0187  test=0.0042  (121s)
+Saved results/ResNet_history.png
+
+Best test acc: 0.1062
+Saved results/ResNet_confusion.png
+Saved results/ResNet_samples.png
+Saved results/ResNet_per_class.png
+  Final Top-1: 0.0507, Top-5: 0.1897

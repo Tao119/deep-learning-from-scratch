@@ -1,0 +1,49 @@
+[VGG baseline, no augmentation]
+
+==================================================
+Training: VGG_NoAug
+  train=3680, batch=32, epochs=30, lr=0.001
+  augmentation=OFF
+==================================================
+epoch   1/30: loss=3.6755  train=0.0708  test=0.0563  (39s)
+epoch   2/30: loss=3.5111  train=0.0396  test=0.0250  (38s)
+epoch   3/30: loss=3.3960  train=0.1500  test=0.0271  (38s)
+epoch   4/30: loss=3.3065  train=0.0833  test=0.0250  (38s)
+epoch   5/30: loss=3.1968  train=0.0917  test=0.0229  (38s)
+epoch   6/30: loss=3.0401  train=0.2208  test=0.0521  (38s)
+epoch   7/30: loss=2.8448  train=0.3042  test=0.0896  (38s)
+epoch   8/30: loss=2.6366  train=0.3792  test=0.0479  (38s)
+epoch   9/30: loss=2.3588  train=0.5792  test=0.1292  (38s)
+epoch  10/30: loss=2.0086  train=0.6083  test=0.1083  (38s)
+epoch  11/30: loss=1.6661  train=0.7792  test=0.1146  (38s)
+epoch  12/30: loss=1.3062  train=0.9417  test=0.1458  (39s)
+epoch  13/30: loss=0.9805  train=0.9542  test=0.1229  (39s)
+epoch  14/30: loss=0.7244  train=0.9792  test=0.1083  (39s)
+epoch  15/30: loss=0.5979  train=0.9708  test=0.1375  (40s)
+epoch  16/30: loss=0.4604  train=0.9833  test=0.1333  (39s)
+epoch  17/30: loss=0.3791  train=0.9938  test=0.1292  (39s)
+epoch  18/30: loss=0.3535  train=0.9917  test=0.1187  (42s)
+epoch  19/30: loss=0.2976  train=0.9917  test=0.1333  (44s)
+epoch  20/30: loss=0.2803  train=0.9979  test=0.0771  (40s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=0.1653  train=1.0000  test=0.1062  (39s)
+epoch  22/30: loss=0.1017  train=1.0000  test=0.1042  (39s)
+epoch  23/30: loss=0.0897  train=1.0000  test=0.1000  (39s)
+epoch  24/30: loss=0.0808  train=1.0000  test=0.1021  (39s)
+epoch  25/30: loss=0.0519  train=1.0000  test=0.0938  (39s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=0.0594  train=1.0000  test=0.0938  (39s)
+epoch  27/30: loss=0.0484  train=1.0000  test=0.0938  (38s)
+epoch  28/30: loss=0.0509  train=1.0000  test=0.0958  (39s)
+epoch  29/30: loss=0.0470  train=1.0000  test=0.0979  (39s)
+epoch  30/30: loss=0.0566  train=1.0000  test=0.0958  (39s)
+Saved results/VGG_NoAug_history.png
+
+Best test acc: 0.1458
+Saved results/VGG_NoAug_confusion.png
+Saved results/VGG_NoAug_samples.png
+Saved results/VGG_NoAug_per_class.png
+  Final Top-1: 0.1562, Top-5: 0.4836
+Saved results/comparison.png
+
+All done. Results in results/

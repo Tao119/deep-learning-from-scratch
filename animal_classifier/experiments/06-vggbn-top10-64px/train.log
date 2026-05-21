@@ -1,0 +1,70 @@
+Loading Oxford-IIIT Pets (64x64) ...
+Loading from cache ...
+mode=top10, classes=10, train=1000, test=1000
+classes: ['Abyssinian', 'american bulldog', 'american pit bull terrier', 'basset hound', 'beagle', 'Bengal', 'Birman', 'boxer', 'British Shorthair', 'chihuahua']
+
+==================================================
+Training: VGGWithBN_top10_mild
+  train=1000, batch=32, epochs=50, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/50: loss=5.4426  train=0.1417  test=0.1104  (88s)
+epoch   2/50: loss=2.3419  train=0.1542  test=0.1229  (97s)
+epoch   3/50: loss=2.3028  train=0.1646  test=0.1042  (95s)
+epoch   4/50: loss=2.2878  train=0.1583  test=0.0938  (84s)
+epoch   5/50: loss=2.2891  train=0.1667  test=0.1021  (83s)
+epoch   6/50: loss=2.2756  train=0.1479  test=0.0938  (82s)
+epoch   7/50: loss=2.2832  train=0.1938  test=0.0938  (92s)
+epoch   8/50: loss=2.2652  train=0.1375  test=0.0813  (99s)
+epoch   9/50: loss=2.2438  train=0.1833  test=0.0667  (92s)
+epoch  10/50: loss=2.2669  train=0.1688  test=0.1083  (92s)
+epoch  11/50: loss=2.2531  train=0.1458  test=0.1083  (83s)
+epoch  12/50: loss=2.2369  train=0.2104  test=0.1021  (81s)
+epoch  13/50: loss=2.2283  train=0.1979  test=0.0792  (81s)
+epoch  14/50: loss=2.2081  train=0.2354  test=0.0688  (83s)
+epoch  15/50: loss=2.1862  train=0.2479  test=0.0646  (93s)
+epoch  16/50: loss=2.1478  train=0.2875  test=0.1000  (95s)
+epoch  17/50: loss=2.1514  train=0.2583  test=0.0938  (95s)
+epoch  18/50: loss=2.1063  train=0.2583  test=0.1187  (79s)
+epoch  19/50: loss=2.1208  train=0.3042  test=0.1021  (81s)
+epoch  20/50: loss=2.0996  train=0.3063  test=0.1021  (77s)
+epoch  21/50: loss=2.1131  train=0.2271  test=0.1354  (77s)
+epoch  22/50: loss=2.0832  train=0.2771  test=0.0896  (84s)
+epoch  23/50: loss=2.0486  train=0.3208  test=0.1146  (80s)
+epoch  24/50: loss=1.9983  train=0.3667  test=0.1062  (77s)
+epoch  25/50: loss=2.0214  train=0.3292  test=0.0979  (82s)
+epoch  26/50: loss=2.0210  train=0.3896  test=0.1187  (79s)
+epoch  27/50: loss=2.0491  train=0.3563  test=0.1125  (88s)
+epoch  28/50: loss=1.9643  train=0.3438  test=0.1125  (85s)
+epoch  29/50: loss=1.9569  train=0.3583  test=0.1146  (90s)
+epoch  30/50: loss=1.9258  train=0.3583  test=0.1021  (89s)
+  LR decayed to 1.00e-04
+epoch  31/50: loss=1.8937  train=0.4104  test=0.0938  (89s)
+epoch  32/50: loss=1.8388  train=0.4333  test=0.0917  (90s)
+epoch  33/50: loss=1.8104  train=0.4500  test=0.1042  (86s)
+epoch  34/50: loss=1.8080  train=0.4458  test=0.0958  (88s)
+epoch  35/50: loss=1.7844  train=0.4792  test=0.1167  (93s)
+epoch  36/50: loss=1.8076  train=0.4458  test=0.1000  (87s)
+epoch  37/50: loss=1.7782  train=0.4437  test=0.1250  (77s)
+epoch  38/50: loss=1.8016  train=0.4854  test=0.0854  (78s)
+epoch  39/50: loss=1.7234  train=0.4479  test=0.0917  (84s)
+epoch  40/50: loss=1.7714  train=0.4437  test=0.0958  (86s)
+  LR decayed to 1.00e-05
+epoch  41/50: loss=1.7713  train=0.5146  test=0.1083  (84s)
+epoch  42/50: loss=1.7533  train=0.4583  test=0.1083  (88s)
+epoch  43/50: loss=1.7623  train=0.4646  test=0.0979  (89s)
+epoch  44/50: loss=1.7434  train=0.4938  test=0.1083  (86s)
+epoch  45/50: loss=1.7408  train=0.5062  test=0.1000  (91s)
+epoch  46/50: loss=1.7497  train=0.4542  test=0.0875  (85s)
+epoch  47/50: loss=1.7383  train=0.4604  test=0.0958  (84s)
+epoch  48/50: loss=1.7421  train=0.5042  test=0.0875  (83s)
+epoch  49/50: loss=1.7600  train=0.4604  test=0.0917  (79s)
+epoch  50/50: loss=1.7551  train=0.4771  test=0.0854  (71s)
+Saved animal_classifier/experiments/06-vggbn-top10-64px/VGGWithBN_top10_mild_history.png
+
+Best test acc: 0.1354
+Saved animal_classifier/experiments/06-vggbn-top10-64px/VGGWithBN_top10_mild_confusion.png
+Saved animal_classifier/experiments/06-vggbn-top10-64px/VGGWithBN_top10_mild_samples.png
+Saved animal_classifier/experiments/06-vggbn-top10-64px/VGGWithBN_top10_mild_per_class.png
+
+Final  Top-1: 0.0927  Top-5: 0.5454

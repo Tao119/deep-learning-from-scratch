@@ -1,0 +1,195 @@
+Loading Oxford-IIIT Pets (32x32) ...
+Loading from cache ...
+train: (3680, 3, 32, 32), test: (3669, 3, 32, 32)
+classes: 37 -> ['0', '1', '2', '3', '4'] ...
+
+[VGG baseline + augmentation]
+
+==================================================
+Training: VGGLike
+  train=3680, batch=32, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=3.6405  train=0.0750  test=0.0000  (40s)
+epoch   2/30: loss=3.5708  train=0.0750  test=0.0271  (43s)
+epoch   3/30: loss=3.4995  train=0.0583  test=0.1104  (41s)
+epoch   4/30: loss=3.4347  train=0.0479  test=0.0958  (41s)
+epoch   5/30: loss=3.3806  train=0.0979  test=0.1875  (44s)
+epoch   6/30: loss=3.3570  train=0.0667  test=0.1187  (45s)
+epoch   7/30: loss=3.3022  train=0.0437  test=0.0604  (45s)
+epoch   8/30: loss=3.2321  train=0.0229  test=0.0292  (44s)
+epoch   9/30: loss=3.1815  train=0.0396  test=0.0250  (42s)
+epoch  10/30: loss=3.1259  train=0.0667  test=0.0375  (42s)
+epoch  11/30: loss=3.0847  train=0.0688  test=0.0458  (43s)
+epoch  12/30: loss=3.0371  train=0.1062  test=0.1854  (44s)
+epoch  13/30: loss=2.9787  train=0.1042  test=0.1542  (42s)
+epoch  14/30: loss=2.9182  train=0.0875  test=0.1167  (42s)
+epoch  15/30: loss=2.8934  train=0.0896  test=0.1521  (40s)
+epoch  16/30: loss=2.8296  train=0.1021  test=0.1187  (40s)
+epoch  17/30: loss=2.7862  train=0.1042  test=0.1479  (43s)
+epoch  18/30: loss=2.7479  train=0.0896  test=0.1042  (43s)
+epoch  19/30: loss=2.6728  train=0.0958  test=0.1333  (43s)
+epoch  20/30: loss=2.6255  train=0.0792  test=0.0833  (41s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=2.4329  train=0.0896  test=0.0813  (40s)
+epoch  22/30: loss=2.3945  train=0.0875  test=0.1021  (38s)
+epoch  23/30: loss=2.3515  train=0.0833  test=0.0938  (39s)
+epoch  24/30: loss=2.3116  train=0.0938  test=0.0958  (40s)
+epoch  25/30: loss=2.2766  train=0.0938  test=0.0813  (39s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=2.2903  train=0.0938  test=0.0896  (39s)
+epoch  27/30: loss=2.2765  train=0.0938  test=0.0854  (39s)
+epoch  28/30: loss=2.2503  train=0.0917  test=0.0875  (40s)
+epoch  29/30: loss=2.2451  train=0.0917  test=0.0854  (40s)
+epoch  30/30: loss=2.2308  train=0.0917  test=0.0875  (40s)
+Saved results/VGGLike_history.png
+
+Best test acc: 0.1875
+Saved results/VGGLike_confusion.png
+Saved results/VGGLike_samples.png
+Saved results/VGGLike_per_class.png
+  Final Top-1: 0.0387, Top-5: 0.1768
+
+[VGG + BatchNorm + augmentation]
+
+==================================================
+Training: VGGWithBN
+  train=3680, batch=32, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=3.7670  train=0.0000  test=0.0000  (47s)
+epoch   2/30: loss=3.5949  train=0.0396  test=0.0458  (48s)
+epoch   3/30: loss=3.5572  train=0.0917  test=0.1313  (50s)
+epoch   4/30: loss=3.5109  train=0.1167  test=0.0875  (56s)
+epoch   5/30: loss=3.4883  train=0.0771  test=0.1083  (50s)
+epoch   6/30: loss=3.4765  train=0.1167  test=0.0167  (48s)
+epoch   7/30: loss=3.4620  train=0.0521  test=0.0187  (45s)
+epoch   8/30: loss=3.4537  train=0.1479  test=0.1229  (45s)
+epoch   9/30: loss=3.4319  train=0.1125  test=0.0625  (46s)
+epoch  10/30: loss=3.4224  train=0.0604  test=0.1104  (46s)
+epoch  11/30: loss=3.4238  train=0.0437  test=0.1000  (46s)
+epoch  12/30: loss=3.4209  train=0.0625  test=0.1271  (46s)
+epoch  13/30: loss=3.4238  train=0.0458  test=0.0083  (45s)
+epoch  14/30: loss=3.3908  train=0.1062  test=0.1771  (47s)
+epoch  15/30: loss=3.3858  train=0.1146  test=0.2042  (48s)
+epoch  16/30: loss=3.3815  train=0.0354  test=0.0854  (47s)
+epoch  17/30: loss=3.3817  train=0.0000  test=0.0063  (53s)
+epoch  18/30: loss=3.3639  train=0.0104  test=0.0187  (46s)
+epoch  19/30: loss=3.3619  train=0.0312  test=0.0458  (45s)
+epoch  20/30: loss=3.3573  train=0.0792  test=0.1562  (46s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=3.3474  train=0.0604  test=0.1062  (46s)
+epoch  22/30: loss=3.3158  train=0.0167  test=0.0625  (47s)
+epoch  23/30: loss=3.3181  train=0.0167  test=0.0625  (46s)
+epoch  24/30: loss=3.2907  train=0.0187  test=0.0312  (45s)
+epoch  25/30: loss=3.2947  train=0.0229  test=0.0312  (45s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=3.2863  train=0.0208  test=0.0271  (45s)
+epoch  27/30: loss=3.2946  train=0.0229  test=0.0250  (45s)
+epoch  28/30: loss=3.2985  train=0.0208  test=0.0271  (45s)
+epoch  29/30: loss=3.3083  train=0.0229  test=0.0375  (45s)
+epoch  30/30: loss=3.2920  train=0.0229  test=0.0229  (46s)
+Saved results/VGGWithBN_history.png
+
+Best test acc: 0.2042
+Saved results/VGGWithBN_confusion.png
+Saved results/VGGWithBN_samples.png
+Saved results/VGGWithBN_per_class.png
+  Final Top-1: 0.0403, Top-5: 0.2067
+
+[ResNet skip connections]
+
+==================================================
+Training: ResNet
+  train=3680, batch=32, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=3.6405  train=0.0729  test=0.1062  (126s)
+epoch   2/30: loss=3.3770  train=0.0479  test=0.0917  (124s)
+epoch   3/30: loss=3.2499  train=0.0021  test=0.0000  (123s)
+epoch   4/30: loss=3.1711  train=0.0146  test=0.0000  (124s)
+epoch   5/30: loss=3.0806  train=0.0042  test=0.0021  (121s)
+epoch   6/30: loss=3.0110  train=0.0563  test=0.0042  (123s)
+epoch   7/30: loss=2.9407  train=0.0000  test=0.0000  (122s)
+epoch   8/30: loss=2.8946  train=0.0042  test=0.0000  (123s)
+epoch   9/30: loss=2.7989  train=0.0146  test=0.0000  (122s)
+epoch  10/30: loss=2.7165  train=0.0667  test=0.0021  (122s)
+epoch  11/30: loss=2.6742  train=0.0042  test=0.0000  (125s)
+epoch  12/30: loss=2.5991  train=0.0167  test=0.0000  (125s)
+epoch  13/30: loss=2.5112  train=0.0125  test=0.0021  (129s)
+epoch  14/30: loss=2.4195  train=0.0104  test=0.0083  (130s)
+epoch  15/30: loss=2.3794  train=0.0938  test=0.0250  (129s)
+epoch  16/30: loss=2.2804  train=0.1083  test=0.0146  (125s)
+epoch  17/30: loss=2.1945  train=0.0208  test=0.0000  (120s)
+epoch  18/30: loss=2.1300  train=0.0271  test=0.0021  (120s)
+epoch  19/30: loss=2.0685  train=0.0104  test=0.0000  (120s)
+epoch  20/30: loss=1.9170  train=0.0125  test=0.0021  (120s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=1.6148  train=0.0083  test=0.0021  (120s)
+epoch  22/30: loss=1.5075  train=0.0083  test=0.0021  (120s)
+epoch  23/30: loss=1.4346  train=0.0104  test=0.0021  (121s)
+epoch  24/30: loss=1.4132  train=0.0167  test=0.0021  (122s)
+epoch  25/30: loss=1.3647  train=0.0146  test=0.0021  (122s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=1.3156  train=0.0167  test=0.0042  (121s)
+epoch  27/30: loss=1.3028  train=0.0146  test=0.0042  (121s)
+epoch  28/30: loss=1.2921  train=0.0167  test=0.0042  (121s)
+epoch  29/30: loss=1.2945  train=0.0187  test=0.0042  (121s)
+epoch  30/30: loss=1.2954  train=0.0187  test=0.0042  (121s)
+Saved results/ResNet_history.png
+
+Best test acc: 0.1062
+Saved results/ResNet_confusion.png
+Saved results/ResNet_samples.png
+Saved results/ResNet_per_class.png
+  Final Top-1: 0.0507, Top-5: 0.1897
+
+[VGG baseline, no augmentation]
+
+==================================================
+Training: VGG_NoAug
+  train=3680, batch=32, epochs=30, lr=0.001
+  augmentation=OFF
+==================================================
+epoch   1/30: loss=3.6755  train=0.0708  test=0.0563  (39s)
+epoch   2/30: loss=3.5111  train=0.0396  test=0.0250  (38s)
+epoch   3/30: loss=3.3960  train=0.1500  test=0.0271  (38s)
+epoch   4/30: loss=3.3065  train=0.0833  test=0.0250  (38s)
+epoch   5/30: loss=3.1968  train=0.0917  test=0.0229  (38s)
+epoch   6/30: loss=3.0401  train=0.2208  test=0.0521  (38s)
+epoch   7/30: loss=2.8448  train=0.3042  test=0.0896  (38s)
+epoch   8/30: loss=2.6366  train=0.3792  test=0.0479  (38s)
+epoch   9/30: loss=2.3588  train=0.5792  test=0.1292  (38s)
+epoch  10/30: loss=2.0086  train=0.6083  test=0.1083  (38s)
+epoch  11/30: loss=1.6661  train=0.7792  test=0.1146  (38s)
+epoch  12/30: loss=1.3062  train=0.9417  test=0.1458  (39s)
+epoch  13/30: loss=0.9805  train=0.9542  test=0.1229  (39s)
+epoch  14/30: loss=0.7244  train=0.9792  test=0.1083  (39s)
+epoch  15/30: loss=0.5979  train=0.9708  test=0.1375  (40s)
+epoch  16/30: loss=0.4604  train=0.9833  test=0.1333  (39s)
+epoch  17/30: loss=0.3791  train=0.9938  test=0.1292  (39s)
+epoch  18/30: loss=0.3535  train=0.9917  test=0.1187  (42s)
+epoch  19/30: loss=0.2976  train=0.9917  test=0.1333  (44s)
+epoch  20/30: loss=0.2803  train=0.9979  test=0.0771  (40s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=0.1653  train=1.0000  test=0.1062  (39s)
+epoch  22/30: loss=0.1017  train=1.0000  test=0.1042  (39s)
+epoch  23/30: loss=0.0897  train=1.0000  test=0.1000  (39s)
+epoch  24/30: loss=0.0808  train=1.0000  test=0.1021  (39s)
+epoch  25/30: loss=0.0519  train=1.0000  test=0.0938  (39s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=0.0594  train=1.0000  test=0.0938  (39s)
+epoch  27/30: loss=0.0484  train=1.0000  test=0.0938  (38s)
+epoch  28/30: loss=0.0509  train=1.0000  test=0.0958  (39s)
+epoch  29/30: loss=0.0470  train=1.0000  test=0.0979  (39s)
+epoch  30/30: loss=0.0566  train=1.0000  test=0.0958  (39s)
+Saved results/VGG_NoAug_history.png
+
+Best test acc: 0.1458
+Saved results/VGG_NoAug_confusion.png
+Saved results/VGG_NoAug_samples.png
+Saved results/VGG_NoAug_per_class.png
+  Final Top-1: 0.1562, Top-5: 0.4836
+Saved results/comparison.png
+
+All done. Results in results/
