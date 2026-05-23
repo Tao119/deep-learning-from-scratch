@@ -1,6 +1,3 @@
-Waiting for C01...
-
-========== Starting C02-vggbn-batchnorm ==========
 Loading CIFAR-10 ...
 Loading from cache ...
 train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
@@ -50,42 +47,3 @@ Saved /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_cl
 Saved /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_classifier/experiments/cifar10/C02-vggbn-batchnorm/VGGWithBN_cifar10_mild_per_class.png
 
 Final  Top-1: 0.9058  Top-5: 0.9970
-C02-vggbn-batchnorm DONE
-
-========== Starting C03-resnet-skipconn ==========
-Loading CIFAR-10 ...
-Loading from cache ...
-train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
-
-==================================================
-Training: ResNet_cifar10_mild
-  train=50000, batch=256, epochs=30, lr=0.001
-  augmentation=ON
-==================================================
-epoch   1/30: loss=1.2714  train=0.5729  test=0.6292  (2477s)
-epoch   2/30: loss=0.8124  train=0.6958  test=0.6771  (2552s)
-epoch   3/30: loss=0.6452  train=0.7792  test=0.7646  (2501s)
-epoch   4/30: loss=0.5385  train=0.7792  test=0.7396  (2504s)
-epoch   5/30: loss=0.4632  train=0.8021  test=0.7979  (2470s)
-epoch   6/30: loss=0.4143  train=0.7979  test=0.7521  (2478s)
-epoch   7/30: loss=0.3693  train=0.8479  test=0.8417  (2505s)
-epoch   8/30: loss=0.3307  train=0.8771  test=0.8521  (2497s)
-epoch   9/30: loss=0.3056  train=0.8771  test=0.8458  (2476s)
-epoch  10/30: loss=0.2754  train=0.9313  test=0.8375  (2455s)
-epoch  11/30: loss=0.2462  train=0.8375  test=0.8229  (2431s)
-epoch  12/30: loss=0.2324  train=0.8854  test=0.8313  (2464s)
-epoch  13/30: loss=0.2129  train=0.9125  test=0.8292  (5316s)
-epoch  14/30: loss=0.2006  train=0.9313  test=0.8833  (7921s)
-epoch  15/30: loss=0.1800  train=0.9104  test=0.8417  (6535s)
-epoch  16/30: loss=0.1636  train=0.8583  test=0.7979  (7954s)
-epoch  17/30: loss=0.1526  train=0.9292  test=0.8667  (9761s)
-C04 done at 09:50
-Saved: /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_classifier/experiments/cifar10/comparison_cifar10.png
-
-=== CIFAR-10 Results ===
-Experiment                   Top-1    Top-5
----------------------------------------------
-C01-vgglike-baseline        87.75%   99.50%
-C02-vggbn-batchnorm         90.58%   99.70%
-C03-resnet-skipconn       running...        —
-C04-vggbn-noaug             87.37%   99.31%

@@ -1,0 +1,49 @@
+Loading CIFAR-10 ...
+Loading from cache ...
+train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
+
+==================================================
+Training: VGGWithBN_cifar10_none
+  train=50000, batch=256, epochs=30, lr=0.001
+  augmentation=OFF
+==================================================
+epoch   1/30: loss=1.7349  train=0.5271  test=0.5396  (862s)
+epoch   2/30: loss=1.1348  train=0.6813  test=0.6583  (874s)
+epoch   3/30: loss=0.9017  train=0.7875  test=0.7292  (897s)
+epoch   4/30: loss=0.7490  train=0.7875  test=0.7458  (876s)
+epoch   5/30: loss=0.6438  train=0.8354  test=0.7771  (872s)
+epoch   6/30: loss=0.5558  train=0.8604  test=0.8063  (813s)
+epoch   7/30: loss=0.4845  train=0.8667  test=0.8187  (807s)
+epoch   8/30: loss=0.4232  train=0.9229  test=0.7896  (797s)
+epoch   9/30: loss=0.3672  train=0.9375  test=0.8208  (802s)
+epoch  10/30: loss=0.3148  train=0.9083  test=0.8333  (801s)
+epoch  11/30: loss=0.2654  train=0.9563  test=0.8208  (811s)
+epoch  12/30: loss=0.2289  train=0.9292  test=0.8250  (799s)
+epoch  13/30: loss=0.1952  train=0.9375  test=0.8187  (806s)
+epoch  14/30: loss=0.1709  train=0.9083  test=0.8083  (837s)
+epoch  15/30: loss=0.1491  train=0.9771  test=0.8583  (846s)
+epoch  16/30: loss=0.1270  train=0.9667  test=0.8229  (841s)
+epoch  17/30: loss=0.1077  train=0.9708  test=0.8688  (821s)
+epoch  18/30: loss=0.0943  train=0.9875  test=0.8500  (811s)
+epoch  19/30: loss=0.0858  train=0.9812  test=0.8521  (808s)
+epoch  20/30: loss=0.0792  train=0.9708  test=0.8500  (825s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=0.0367  train=1.0000  test=0.8833  (814s)
+epoch  22/30: loss=0.0189  train=1.0000  test=0.8667  (809s)
+epoch  23/30: loss=0.0163  train=0.9979  test=0.8750  (798s)
+epoch  24/30: loss=0.0144  train=1.0000  test=0.8812  (807s)
+epoch  25/30: loss=0.0123  train=1.0000  test=0.8521  (803s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=0.0114  train=1.0000  test=0.8729  (803s)
+epoch  27/30: loss=0.0111  train=1.0000  test=0.8708  (1090s)
+epoch  28/30: loss=0.0109  train=1.0000  test=0.8667  (3628s)
+epoch  29/30: loss=0.0111  train=1.0000  test=0.8833  (5475s)
+epoch  30/30: loss=0.0105  train=1.0000  test=0.8792  (3487s)
+Saved animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_history.png
+
+Best test acc: 0.8833
+Saved animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_confusion.png
+Saved animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_samples.png
+Saved animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_per_class.png
+
+Final  Top-1: 0.8737  Top-5: 0.9931

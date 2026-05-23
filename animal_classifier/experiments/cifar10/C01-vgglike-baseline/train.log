@@ -22,3 +22,52 @@ Traceback (most recent call last):
     with open(path, "wb") as f:
          ^^^^^^^^^^^^^^^^
 OSError: [Errno 28] No space left on device: 'animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_best.pkl'
+Loading CIFAR-10 ...
+Loading from cache ...
+train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
+
+==================================================
+Training: VGGLike_cifar10_mild
+  train=50000, batch=256, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=1.7265  train=0.5125  test=0.5167  (496s)
+epoch   2/30: loss=1.1750  train=0.6167  test=0.6396  (511s)
+epoch   3/30: loss=0.9303  train=0.7562  test=0.7167  (508s)
+epoch   4/30: loss=0.7866  train=0.7688  test=0.7688  (511s)
+epoch   5/30: loss=0.6792  train=0.8250  test=0.7708  (507s)
+epoch   6/30: loss=0.6119  train=0.8667  test=0.8021  (509s)
+epoch   7/30: loss=0.5527  train=0.8146  test=0.8063  (564s)
+epoch   8/30: loss=0.5232  train=0.8396  test=0.8104  (553s)
+epoch   9/30: loss=0.4667  train=0.8562  test=0.8000  (514s)
+epoch  10/30: loss=0.4499  train=0.8896  test=0.7750  (491s)
+epoch  11/30: loss=0.4106  train=0.8833  test=0.8604  (489s)
+epoch  12/30: loss=0.3863  train=0.9104  test=0.8521  (490s)
+epoch  13/30: loss=0.3637  train=0.9208  test=0.8667  (488s)
+epoch  14/30: loss=0.3633  train=0.9313  test=0.8521  (489s)
+epoch  15/30: loss=0.3227  train=0.9229  test=0.8562  (489s)
+epoch  16/30: loss=0.3124  train=0.9042  test=0.8667  (489s)
+epoch  17/30: loss=0.3002  train=0.9229  test=0.8917  (492s)
+epoch  18/30: loss=0.2835  train=0.9271  test=0.8396  (489s)
+epoch  19/30: loss=0.2782  train=0.9146  test=0.8313  (489s)
+epoch  20/30: loss=0.2637  train=0.9479  test=0.8750  (489s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=0.1884  train=0.9437  test=0.8833  (490s)
+epoch  22/30: loss=0.1629  train=0.9729  test=0.9000  (491s)
+epoch  23/30: loss=0.1512  train=0.9688  test=0.8771  (489s)
+epoch  24/30: loss=0.1429  train=0.9708  test=0.8792  (493s)
+epoch  25/30: loss=0.1332  train=0.9833  test=0.8792  (492s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=0.1258  train=0.9729  test=0.9000  (488s)
+epoch  27/30: loss=0.1236  train=0.9938  test=0.8938  (487s)
+epoch  28/30: loss=0.1231  train=0.9771  test=0.9146  (488s)
+epoch  29/30: loss=0.1224  train=0.9708  test=0.8750  (487s)
+epoch  30/30: loss=0.1218  train=0.9833  test=0.8646  (488s)
+Saved animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_history.png
+
+Best test acc: 0.9146
+Saved animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_confusion.png
+Saved animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_samples.png
+Saved animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_per_class.png
+
+Final  Top-1: 0.8775  Top-5: 0.9950
