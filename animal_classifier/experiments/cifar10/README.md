@@ -24,10 +24,12 @@ Oxford Petsと比べてクラスあたり50倍のデータ量。
 
 | ID | フォルダ | モデル | Aug | Top-1 | Top-5 | 状態 |
 |----|---------|--------|-----|-------|-------|------|
-| C01 | vgglike-baseline | VGGLike | mild | — | — | 実行中 |
-| C02 | vggbn-batchnorm | VGGWithBN | mild | — | — | 予定 |
-| C03 | resnet-skipconn | ResNet | mild | — | — | 予定 |
-| C04 | vggbn-noaug | VGGWithBN | none | — | — | 予定 |
+| C01 | vgglike-baseline | VGGLike | mild | 87.75% | 99.50% | ✅ 完了 |
+| C02 | vggbn-batchnorm | VGGWithBN | mild | **90.58%** | 99.70% | ✅ 完了 |
+| C03 | resnet-skipconn | ResNet | mild | ~88%† | — | ⚠️ 17ep中止 |
+| C04 | vggbn-noaug | VGGWithBN | none | 87.37% | 99.31% | ✅ 完了 |
+
+† epoch 14時点のsampling acc。pure NumPy ResNetは1epoch≈2時間のため中止。
 
 ## 共通設定
 

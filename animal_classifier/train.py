@@ -79,7 +79,10 @@ def train(model, model_name, x_train, t_train, x_test, t_test,
         if test_acc > best_test_acc:
             best_test_acc = test_acc
             if hasattr(model, "save"):
-                model.save(os.path.join(output_dir, f"{model_name}_best.pkl"))
+                try:
+                    model.save(os.path.join(output_dir, f"{model_name}_best.pkl"))
+                except OSError as e:
+                    print(f"  [warn] save failed: {e}")
 
     os.makedirs(output_dir, exist_ok=True)
     _plot_history(train_acc_hist, test_acc_hist, loss_hist, model_name, output_dir)

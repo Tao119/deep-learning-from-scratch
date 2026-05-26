@@ -89,3 +89,41 @@ C01-vgglike-baseline        87.75%   99.50%
 C02-vggbn-batchnorm         90.58%   99.70%
 C03-resnet-skipconn       running...        —
 C04-vggbn-noaug             87.37%   99.31%
+[main f398260] Add CIFAR-10 experiment results (C01-C04)
+ 23 files changed, 461 insertions(+), 19 deletions(-)
+ create mode 100644 animal_classifier/experiments/cifar10/C01-vgglike-baseline/README.md
+ create mode 100644 animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_confusion.png
+ create mode 100644 animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_history.png
+ create mode 100644 animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_per_class.png
+ create mode 100644 animal_classifier/experiments/cifar10/C01-vgglike-baseline/VGGLike_cifar10_mild_samples.png
+ create mode 100644 animal_classifier/experiments/cifar10/C02-vggbn-batchnorm/README.md
+ create mode 100644 animal_classifier/experiments/cifar10/C02-vggbn-batchnorm/VGGWithBN_cifar10_mild_confusion.png
+ create mode 100644 animal_classifier/experiments/cifar10/C02-vggbn-batchnorm/VGGWithBN_cifar10_mild_history.png
+ create mode 100644 animal_classifier/experiments/cifar10/C02-vggbn-batchnorm/VGGWithBN_cifar10_mild_per_class.png
+ create mode 100644 animal_classifier/experiments/cifar10/C02-vggbn-batchnorm/VGGWithBN_cifar10_mild_samples.png
+ create mode 100644 animal_classifier/experiments/cifar10/C02-vggbn-batchnorm/train.log
+ create mode 100644 animal_classifier/experiments/cifar10/C03-resnet-skipconn/README.md
+ create mode 100644 animal_classifier/experiments/cifar10/C03-resnet-skipconn/train.log
+ create mode 100644 animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_confusion.png
+ create mode 100644 animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_history.png
+ create mode 100644 animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_per_class.png
+ create mode 100644 animal_classifier/experiments/cifar10/C04-vggbn-noaug/VGGWithBN_cifar10_none_samples.png
+ create mode 100644 animal_classifier/experiments/cifar10/C04-vggbn-noaug/train.log
+ create mode 100644 animal_classifier/experiments/cifar10/comparison_cifar10.png
+ create mode 100644 animal_classifier/experiments/cifar10/generate_cifar10_report.py
+pushed
+C04 done, generating report...
+Saved: /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_classifier/experiments/comparison_all.png
+
+=== Experiment Summary ===
+Experiment                        Top-1    Top-5   BestSamp
+------------------------------------------------------------
+01-vgglike-baseline               3.87%   17.68%     18.75%
+02-vggbn-batchnorm                4.03%   20.67%     20.42%
+03-resnet-skipconn                5.07%   18.97%     10.62%
+04-vggnoaug-overfit              15.62%   48.36%     14.58%
+05-vggbn-catdog-binary                —        —          —
+06-vggbn-top10-64px               9.27%   54.54%     13.54%
+07-resnet-top10-64px                  —        —          —
+08-vggbn-top10-fullaug                —        —          —
+Report done.
