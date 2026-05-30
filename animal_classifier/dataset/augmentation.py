@@ -62,3 +62,61 @@ def mild_augment(x, train_flg=True):
 
 def batch_mild_augment(x_batch, train_flg=True):
     return np.array([mild_augment(x, train_flg) for x in x_batch])
+
+
+def mixup(x_batch, t_batch, alpha=0.4):
+    n, num_classes = x_batch.shape[0], t_batch.max() + 1 if t_batch.ndim == 1 else t_batch.shape[1]
+    lam = np.random.beta(alpha, alpha)
+    idx = np.random.permutation(n)
+
+    if t_batch.ndim == 1:
+        t_onehot = np.eye(num_classes, dtype=np.float32)[t_batch]
+    else:
+        t_onehot = t_batch.astype(np.float32)
+
+    x_mix = lam * x_batch + (1.0 - lam) * x_batch[idx]
+    t_mix = lam * t_onehot + (1.0 - lam) * t_onehot[idx]
+    return x_mix, t_mix
+
+
+def cutmix(x_batch, t_batch, alpha=1.0):
+    n = x_batch.shape[0]
+    _, C, H, W = x_batch.shape
+    num_classes = t_batch.max() + 1 if t_batch.ndim == 1 else t_batch.shape[1]
+
+    lam = np.random.beta(alpha, alpha)
+    idx = np.random.permutation(n)
+
+    cut_ratio = np.sqrt(1.0 - lam)
+    cut_h = int(H * cut_ratio)
+    cut_w = int(W * cut_ratio)
+
+    cx = np.random.randint(W)
+    cy = np.random.randint(H)
+    x1 = np.clip(cx - cut_w // 2, 0, W)
+    x2 = np.clip(cx + cut_w // 2, 0, W)
+    y1 = np.clip(cy - cut_h // 2, 0, H)
+    y2 = np.clip(cy + cut_h // 2, 0, H)
+
+    x_mix = x_batch.copy()
+    x_mix[:, :, y1:y2, x1:x2] = x_batch[idx, :, y1:y2, x1:x2]
+
+    lam_actual = 1.0 - (x2 - x1) * (y2 - y1) / (W * H)
+
+    if t_batch.ndim == 1:
+        t_onehot = np.eye(num_classes, dtype=np.float32)[t_batch]
+    else:
+        t_onehot = t_batch.astype(np.float32)
+
+    t_mix = lam_actual * t_onehot + (1.0 - lam_actual) * t_onehot[idx]
+    return x_mix, t_mix
+
+
+def batch_mixup_augment(x_batch, t_batch, train_flg=True):
+    x_aug = batch_mild_augment(x_batch, train_flg=train_flg)
+    return mixup(x_aug, t_batch)
+
+
+def batch_cutmix_augment(x_batch, t_batch, train_flg=True):
+    x_aug = batch_mild_augment(x_batch, train_flg=train_flg)
+    return cutmix(x_aug, t_batch)
