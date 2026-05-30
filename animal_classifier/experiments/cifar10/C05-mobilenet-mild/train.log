@@ -1,0 +1,49 @@
+Loading CIFAR-10 ...
+Loading from cache ...
+train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
+
+==================================================
+Training: MobileNet_cifar10_mild
+  train=50000, batch=256, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=1.4963  train=0.5958  test=0.5604  (534s)
+epoch   2/30: loss=1.1077  train=0.5979  test=0.5917  (547s)
+epoch   3/30: loss=0.9368  train=0.6729  test=0.7000  (527s)
+epoch   4/30: loss=0.8148  train=0.7125  test=0.7542  (584s)
+epoch   5/30: loss=0.7327  train=0.7708  test=0.7375  (561s)
+epoch   6/30: loss=0.6632  train=0.7667  test=0.7375  (568s)
+epoch   7/30: loss=0.6111  train=0.7854  test=0.7458  (567s)
+epoch   8/30: loss=0.5719  train=0.8417  test=0.7542  (560s)
+epoch   9/30: loss=0.5354  train=0.8063  test=0.7979  (559s)
+epoch  10/30: loss=0.5020  train=0.8187  test=0.7896  (567s)
+epoch  11/30: loss=0.4795  train=0.8729  test=0.7708  (592s)
+epoch  12/30: loss=0.4549  train=0.8562  test=0.7958  (499s)
+epoch  13/30: loss=0.4339  train=0.8542  test=0.7875  (496s)
+epoch  14/30: loss=0.4158  train=0.8438  test=0.8208  (507s)
+epoch  15/30: loss=0.4019  train=0.8646  test=0.8167  (519s)
+epoch  16/30: loss=0.3887  train=0.8750  test=0.8187  (517s)
+epoch  17/30: loss=0.3680  train=0.8917  test=0.8187  (536s)
+epoch  18/30: loss=0.3542  train=0.9104  test=0.8396  (557s)
+epoch  19/30: loss=0.3465  train=0.9146  test=0.8167  (632s)
+epoch  20/30: loss=0.3318  train=0.8958  test=0.8104  (570s)
+  LR decayed to 1.00e-04
+epoch  21/30: loss=0.2798  train=0.9250  test=0.8458  (592s)
+epoch  22/30: loss=0.2640  train=0.9208  test=0.8167  (625s)
+epoch  23/30: loss=0.2569  train=0.9167  test=0.8479  (3165s)
+epoch  24/30: loss=0.2554  train=0.9313  test=0.8313  (11517s)
+epoch  25/30: loss=0.2489  train=0.9271  test=0.8375  (36593s)
+  LR decayed to 1.00e-05
+epoch  26/30: loss=0.2433  train=0.9250  test=0.8646  (566s)
+epoch  27/30: loss=0.2401  train=0.9229  test=0.8521  (560s)
+epoch  28/30: loss=0.2440  train=0.9083  test=0.8438  (582s)
+epoch  29/30: loss=0.2404  train=0.9229  test=0.8667  (593s)
+epoch  30/30: loss=0.2387  train=0.9437  test=0.8104  (530s)
+Saved animal_classifier/experiments/cifar10/C05-mobilenet-mild/MobileNet_cifar10_mild_history.png
+
+Best test acc: 0.8667
+Saved animal_classifier/experiments/cifar10/C05-mobilenet-mild/MobileNet_cifar10_mild_confusion.png
+Saved animal_classifier/experiments/cifar10/C05-mobilenet-mild/MobileNet_cifar10_mild_samples.png
+Saved animal_classifier/experiments/cifar10/C05-mobilenet-mild/MobileNet_cifar10_mild_per_class.png
+
+Final  Top-1: 0.8537  Top-5: 0.9937

@@ -8,13 +8,16 @@ from dataset.augmentation import batch_augment, batch_mild_augment
 from models.vgg_like import VGGLike
 from models.vgg_bn import VGGWithBN
 from models.resnet import ResNet
+from models.se_resnet import SEResNet
+from models.densenet import DenseNet
+from models.mobilenet import MobileNet
 from train import train
 from utils.visualization import plot_confusion_matrix, plot_sample_predictions, plot_top5_accuracy
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", choices=["vgg", "vgg_bn", "resnet"], default="vgg_bn")
+    parser.add_argument("--model", choices=["vgg", "vgg_bn", "resnet", "se_resnet", "densenet", "mobilenet"], default="vgg_bn")
     parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--batch", type=int, default=128)
     parser.add_argument("--lr", type=float, default=0.001)
@@ -38,9 +41,18 @@ if __name__ == "__main__":
     elif model_key == "vgg_bn":
         model = VGGWithBN(3, 32, 10)
         name = f"VGGWithBN_cifar10_{args.aug}"
-    else:
+    elif model_key == "resnet":
         model = ResNet(3, 10)
         name = f"ResNet_cifar10_{args.aug}"
+    elif model_key == "se_resnet":
+        model = SEResNet(3, 10)
+        name = f"SEResNet_cifar10_{args.aug}"
+    elif model_key == "densenet":
+        model = DenseNet(3, 10)
+        name = f"DenseNet_cifar10_{args.aug}"
+    else:
+        model = MobileNet(3, 10)
+        name = f"MobileNet_cifar10_{args.aug}"
 
     aug_fn = batch_mild_augment if args.aug == "mild" else batch_augment
     use_augment = args.aug != "none"

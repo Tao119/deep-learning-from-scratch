@@ -127,3 +127,16 @@ Experiment                        Top-1    Top-5   BestSamp
 07-resnet-top10-64px                  —        —          —
 08-vggbn-top10-fullaug                —        —          —
 Report done.
+C05 done, starting C06 DenseNet...
+Loading CIFAR-10 ...
+Loading from cache ...
+train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
+
+==================================================
+Training: DenseNet_cifar10_mild
+  train=50000, batch=128, epochs=30, lr=0.001
+  augmentation=ON
+==================================================
+epoch   1/30: loss=1.3178  train=0.5833  test=0.6208  (2295s)
+epoch   2/30: loss=0.9461  train=0.6813  test=0.6917  (4060s)
+epoch   3/30: loss=0.8012  train=0.7000  test=0.7438  (11175s)

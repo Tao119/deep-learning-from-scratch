@@ -1,0 +1,9 @@
+Loading CIFAR-10 ...
+Loading from cache ...
+train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
+
+==================================================
+Training: VGGWithBN_cifar10_mixup
+  train=50000, batch=256, epochs=30, lr=0.001
+  mix_fn=mixup, alpha=0.4
+==================================================

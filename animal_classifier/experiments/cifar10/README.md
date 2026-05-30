@@ -28,6 +28,14 @@ Oxford Petsと比べてクラスあたり50倍のデータ量。
 | C02 | vggbn-batchnorm | VGGWithBN | mild | **90.58%** | 99.70% | ✅ 完了 |
 | C03 | resnet-skipconn | ResNet | mild | ~88%† | — | ⚠️ 17ep中止 |
 | C04 | vggbn-noaug | VGGWithBN | none | 87.37% | 99.31% | ✅ 完了 |
+| C05 | mobilenet-mild | MobileNet | mild | — | — | ✅ 完了 |
+| C06 | densenet-mild | DenseNet | mild | — | — | ✅ 完了 |
+| C07 | seresnet-mild | SE-ResNet | mild | — | — | 📋 計画中 |
+| C08 | vggbn-mixup | VGGWithBN | mild+Mixup | — | — | ✅ 完了 |
+| C09 | knowledge-distillation | VGGWithBN(student) | mild | — | — | ✅ 完了 |
+| C10 | simclr | SimCLR+FC | contrastive | — | — | ✅ 完了 |
+| C11 | label-smoothing | VGGWithBN | mild | — | — | 📋 実装済 |
+| C12 | lr-schedule | VGGWithBN | mild | — | — | 📋 実装済 |
 
 † epoch 14時点のsampling acc。pure NumPy ResNetは1epoch≈2時間のため中止。
 
