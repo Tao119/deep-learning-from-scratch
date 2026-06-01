@@ -5,3 +5,12 @@ Teacher checkpoint not found. Training teacher briefly (10 epochs) ...
   teacher epoch 1: test=0.5897
   teacher epoch 2: test=0.6784
   teacher epoch 3: test=0.7228
+  teacher epoch 4: test=0.7036
+  teacher epoch 5: test=0.7984
+  teacher epoch 6: test=0.8216
+  teacher epoch 7: test=0.8236
+  teacher epoch 8: test=0.8518
+  teacher epoch 9: test=0.8357
+  teacher epoch 10: test=0.8438
+
+Generating soft labels from teacher (T=4.0)...
