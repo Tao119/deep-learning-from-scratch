@@ -27,3 +27,8 @@ train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
   epoch  20/30: loss=0.5783  train=0.2656  test=0.2839  (602s)
   LR -> 1.00e-04
   epoch  21/30: loss=0.4891  train=0.3281  test=0.2760  (602s)
+  epoch  22/30: loss=0.4679  train=0.2734  test=0.3047  (588s)
+  epoch  23/30: loss=0.4558  train=0.2344  test=0.2500  (591s)
+  epoch  24/30: loss=0.4465  train=0.2214  test=0.2292  (591s)
+  epoch  25/30: loss=0.4423  train=0.2109  test=0.2526  (591s)
+  LR -> 1.00e-05
