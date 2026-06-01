@@ -1,0 +1,99 @@
+{
+  "cifar10_experiments": [
+    {
+      "id": "C01",
+      "model": "VGGLike",
+      "aug": "mild",
+      "top1": 87.75,
+      "top5": 99.5,
+      "status": "done"
+    },
+    {
+      "id": "C02",
+      "model": "VGGWithBN",
+      "aug": "mild",
+      "top1": 90.58,
+      "top5": 99.7,
+      "status": "done"
+    },
+    {
+      "id": "C03",
+      "model": "ResNet",
+      "aug": "mild",
+      "top1": null,
+      "top5": null,
+      "status": "aborted (too slow)"
+    },
+    {
+      "id": "C04",
+      "model": "VGGWithBN",
+      "aug": "none",
+      "top1": 87.37,
+      "top5": 99.31,
+      "status": "done"
+    },
+    {
+      "id": "C05",
+      "model": "MobileNet",
+      "aug": "mild",
+      "top1": 85.4,
+      "top5": 99.37,
+      "status": "done"
+    },
+    {
+      "id": "C06",
+      "model": "DenseNet",
+      "aug": "mild",
+      "top1": null,
+      "top5": null,
+      "status": "partial (3ep)"
+    },
+    {
+      "id": "C07",
+      "model": "SEResNet",
+      "aug": "mild",
+      "top1": null,
+      "top5": null,
+      "status": "queued"
+    },
+    {
+      "id": "C08",
+      "model": "VGGWithBN+Mixup",
+      "aug": "mild+mixup",
+      "top1": 90.25,
+      "top5": 99.65,
+      "status": "done",
+      "peak": 91.9
+    },
+    {
+      "id": "C09",
+      "model": "KD(VGGWithBN→StudentNet)",
+      "aug": "mild",
+      "top1": null,
+      "top5": null,
+      "status": "running"
+    },
+    {
+      "id": "C11",
+      "model": "VGGWithBN+LabelSmoothing",
+      "aug": "mild",
+      "top1": null,
+      "top5": null,
+      "status": "queued"
+    },
+    {
+      "id": "C12",
+      "model": "LR Schedule Comparison",
+      "aug": "mild",
+      "top1": null,
+      "top5": null,
+      "status": "queued"
+    }
+  ],
+  "key_findings": [
+    "C02 VGGWithBN+BN best baseline: 90.58%",
+    "C08 Mixup peak 91.9%@ep24 shows Mixup effective with LR decay",
+    "C05 MobileNet lightweight: 85.4% at 1/4 params vs VGGWithBN",
+    "Augmentation: mild > none for large datasets (+3.2pt vs C04)"
+  ]
+}
