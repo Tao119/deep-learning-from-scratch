@@ -7,3 +7,6 @@ Training: VGGWithBN_cifar10_mixup
   train=50000, batch=256, epochs=30, lr=0.001
   mix_fn=mixup, alpha=0.4
 ==================================================
+epoch   1/30: loss=1.8586  train=0.5229  test=0.4792  (633s)
+epoch   2/30: loss=1.4199  train=0.6542  test=0.6229  (574s)
+epoch   3/30: loss=1.2135  train=0.7167  test=0.6583  (575s)
