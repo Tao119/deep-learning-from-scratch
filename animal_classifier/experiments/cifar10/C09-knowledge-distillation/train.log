@@ -14,3 +14,25 @@ Teacher checkpoint not found. Training teacher briefly (10 epochs) ...
   teacher epoch 10: test=0.8438
 
 Generating soft labels from teacher (T=4.0)...
+soft_train shape: (50000, 10)
+
+==================================================
+Training StudentNet with KD  alpha=0.7  T=4.0
+  train=50000, batch=256, epochs=30
+==================================================
+epoch   1/30: loss=1.9609  train=0.5339  test=0.5495  (81s)
+epoch   2/30: loss=1.6836  train=0.6536  test=0.6432  (82s)
+epoch   3/30: loss=1.5807  train=0.6667  test=0.6667  (82s)
+epoch   4/30: loss=1.5138  train=0.7135  test=0.6589  (82s)
+epoch   5/30: loss=1.4720  train=0.6953  test=0.7266  (83s)
+epoch   6/30: loss=1.4400  train=0.7370  test=0.7500  (82s)
+epoch   7/30: loss=1.4132  train=0.7526  test=0.7448  (83s)
+epoch   8/30: loss=1.3973  train=0.7995  test=0.7083  (83s)
+epoch   9/30: loss=1.3801  train=0.7969  test=0.7552  (83s)
+epoch  10/30: loss=1.3646  train=0.8151  test=0.7839  (83s)
+epoch  11/30: loss=1.3536  train=0.8021  test=0.7995  (83s)
+epoch  12/30: loss=1.3423  train=0.8151  test=0.8125  (83s)
+epoch  13/30: loss=1.3344  train=0.8073  test=0.7786  (83s)
+epoch  14/30: loss=1.3264  train=0.8073  test=0.7760  (83s)
+epoch  15/30: loss=1.3189  train=0.8620  test=0.7865  (83s)
+epoch  16/30: loss=1.3123  train=0.8854  test=0.7656  (83s)
