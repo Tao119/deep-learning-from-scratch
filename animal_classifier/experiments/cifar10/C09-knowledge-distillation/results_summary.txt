@@ -1,0 +1,3 @@
+KD student best test acc:    0.8490
+Scratch student best acc:    0.8333
+KD gain:                     +0.0156

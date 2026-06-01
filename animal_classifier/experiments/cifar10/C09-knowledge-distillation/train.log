@@ -87,3 +87,13 @@ epoch  26/30: loss=0.4383  train=0.8802  test=0.8333  (118s)
 epoch  27/30: loss=0.4279  train=0.8802  test=0.8177  (101s)
 epoch  28/30: loss=0.4324  train=0.8568  test=0.8255  (89s)
 epoch  29/30: loss=0.4315  train=0.8906  test=0.8333  (92s)
+epoch  30/30: loss=0.4330  train=0.8828  test=0.8177  (94s)
+
+==================================================
+
+Student (KD) best test acc:  0.8490
+Student (scratch) best acc:  0.8333
+KD gain over scratch:        +0.0156
+==================================================
+Saved /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_classifier/experiments/cifar10/C09-knowledge-distillation/kd_vs_scratch.png
+Saved summary to /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_classifier/experiments/cifar10/C09-knowledge-distillation/results_summary.txt
