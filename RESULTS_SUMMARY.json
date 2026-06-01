@@ -69,9 +69,10 @@
       "id": "C09",
       "model": "KD(VGGWithBN→StudentNet)",
       "aug": "mild",
-      "top1": null,
+      "top1": 84.9,
       "top5": null,
-      "status": "running"
+      "status": "done (KD)",
+      "note": "KD gain +1.56% vs scratch 83.3%"
     },
     {
       "id": "C11",
