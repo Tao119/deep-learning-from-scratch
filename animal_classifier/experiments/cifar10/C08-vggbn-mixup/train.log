@@ -28,3 +28,7 @@ epoch  18/30: loss=0.6534  train=0.9354  test=0.8479  (565s)
 epoch  19/30: loss=0.6550  train=0.9062  test=0.8604  (575s)
 epoch  20/30: loss=0.6141  train=0.9583  test=0.8479  (639s)
   LR decayed to 1.00e-04
+epoch  21/30: loss=0.5816  train=0.9542  test=0.9000  (583s)
+epoch  22/30: loss=0.5643  train=0.9583  test=0.9062  (589s)
+epoch  23/30: loss=0.5805  train=0.9375  test=0.8938  (591s)
+epoch  24/30: loss=0.5890  train=0.9563  test=0.9187  (585s)
