@@ -1,0 +1,26 @@
+Loading CIFAR-10 ...
+Loading from cache ...
+train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
+
+=======================================================
+  Schedule: StepLR
+=======================================================
+  epoch   1/15: lr=1.00e-03  loss=1.7921  train=0.1615  test=0.1797  (586s)
+  epoch   2/15: lr=1.00e-03  loss=1.4130  train=0.2214  test=0.2917  (588s)
+  epoch   3/15: lr=1.00e-03  loss=1.2663  train=0.1901  test=0.2161  (4234s)
+  epoch   4/15: lr=1.00e-03  loss=1.1599  train=0.2526  test=0.3359  (810s)
+  epoch   5/15: lr=1.00e-03  loss=1.0802  train=0.2188  test=0.1849  (870s)
+  epoch   6/15: lr=1.00e-03  loss=1.0165  train=0.3333  test=0.3516  (9841s)
+  epoch   7/15: lr=1.00e-03  loss=0.9581  train=0.3021  test=0.3151  (15664s)
+  epoch   8/15: lr=1.00e-03  loss=0.9124  train=0.2708  test=0.2135  (949s)
+  epoch   9/15: lr=1.00e-03  loss=0.8765  train=0.2708  test=0.2188  (932s)
+  epoch  10/15: lr=1.00e-03  loss=0.8366  train=0.2865  test=0.3021  (951s)
+  epoch  11/15: lr=1.00e-04  loss=0.7266  train=0.2969  test=0.3281  (974s)
+  epoch  12/15: lr=1.00e-04  loss=0.6972  train=0.3385  test=0.3281  (920s)
+  epoch  13/15: lr=1.00e-04  loss=0.6839  train=0.3594  test=0.3125  (859s)
+  epoch  14/15: lr=1.00e-04  loss=0.6663  train=0.3177  test=0.3542  (609s)
+  epoch  15/15: lr=1.00e-04  loss=0.6620  train=0.3333  test=0.3255  (602s)
+
+=======================================================
+  Schedule: CosineAnnealing
+=======================================================

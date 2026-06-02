@@ -72,3 +72,12 @@ train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
   epoch  27/30: loss=0.8945  train=0.2943  test=0.3047  (601s)
   epoch  28/30: loss=0.8958  train=0.2865  test=0.2708  (593s)
   epoch  29/30: loss=0.8941  train=0.3021  test=0.3047  (590s)
+  epoch  30/30: loss=0.8924  train=0.2370  test=0.2682  (591s)
+
+Saved /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_classifier/experiments/cifar10/C11-label-smoothing/label_smoothing_comparison.png
+
+Final test accuracy:
+  Standard CE       : 0.2500
+  Label Smoothing   : 0.2682
+  Best CE test      : 0.3854
+  Best Smooth test  : 0.3828
