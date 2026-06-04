@@ -97,7 +97,7 @@
       "top1": 66.67,
       "top5": null,
       "status": "done",
-      "note": "Pure NumPy ViT: patch_size=4, d_model=64, 4 heads, 4 layers, d_ff=256, 30ep, best test_acc=66.67% @ep28-29"
+      "note": "ViT: patch4×4, 64patches, d_model=64, 4heads, 30ep (161s/ep)"
     },
     {
       "id": "C14",
