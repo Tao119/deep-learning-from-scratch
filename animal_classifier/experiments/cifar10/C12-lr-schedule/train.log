@@ -32,3 +32,36 @@ train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
   epoch   6/15: lr=7.53e-04  loss=0.9872  train=0.2839  test=0.2786  (702s)
   epoch   7/15: lr=6.58e-04  loss=0.9246  train=0.3047  test=0.2839  (1047s)
   epoch   8/15: lr=5.57e-04  loss=0.8693  train=0.3021  test=0.2995  (929s)
+  epoch   9/15: lr=4.53e-04  loss=0.8224  train=0.3802  test=0.3490  (906s)
+  epoch  10/15: lr=3.52e-04  loss=0.7746  train=0.3255  test=0.3490  (17133s)
+  epoch  11/15: lr=2.58e-04  loss=0.7407  train=0.3542  test=0.3203  (79237s)
+  epoch  12/15: lr=1.74e-04  loss=0.7005  train=0.3073  test=0.3516  (679s)
+  epoch  13/15: lr=1.05e-04  loss=0.6776  train=0.3854  test=0.3125  (672s)
+  epoch  14/15: lr=5.28e-05  loss=0.6587  train=0.3750  test=0.3646  (685s)
+  epoch  15/15: lr=2.08e-05  loss=0.6464  train=0.3620  test=0.3828  (695s)
+
+=======================================================
+  Schedule: WarmupCosine
+=======================================================
+  epoch   1/15: lr=3.33e-04  loss=1.7013  train=0.1589  test=0.1562  (684s)
+  epoch   2/15: lr=6.67e-04  loss=1.3932  train=0.2865  test=0.3099  (708s)
+  epoch   3/15: lr=1.00e-03  loss=1.2503  train=0.3594  test=0.3411  (682s)
+  epoch   4/15: lr=1.00e-03  loss=1.1240  train=0.4115  test=0.3411  (698s)
+  epoch   5/15: lr=9.83e-04  loss=1.0440  train=0.2943  test=0.2865  (702s)
+  epoch   6/15: lr=9.34e-04  loss=0.9629  train=0.3880  test=0.4219  (700s)
+  epoch   7/15: lr=8.55e-04  loss=0.8944  train=0.3620  test=0.4245  (721s)
+  epoch   8/15: lr=7.53e-04  loss=0.8382  train=0.2995  test=0.3229  (699s)
+  epoch   9/15: lr=6.33e-04  loss=0.7827  train=0.4297  test=0.3802  (707s)
+  epoch  10/15: lr=5.05e-04  loss=0.7341  train=0.3984  test=0.3724  (710s)
+  epoch  11/15: lr=3.77e-04  loss=0.6890  train=0.3906  test=0.3255  (699s)
+  epoch  12/15: lr=2.58e-04  loss=0.6447  train=0.3906  test=0.4297  (708s)
+  epoch  13/15: lr=1.55e-04  loss=0.6055  train=0.3281  test=0.3906  (690s)
+  epoch  14/15: lr=7.63e-05  loss=0.5791  train=0.3646  test=0.3411  (703s)
+  epoch  15/15: lr=2.69e-05  loss=0.5618  train=0.3516  test=0.4271  (719s)
+
+Saved /Users/matsumura-tao/sources/imai-lab/deep-learning-from-scratch/animal_classifier/experiments/cifar10/C12-lr-schedule/lr_schedules.png
+
+Final test accuracy by schedule:
+  StepLR                : 0.3255  (best=0.3542)
+  CosineAnnealing       : 0.3828  (best=0.3828)
+  WarmupCosine          : 0.4271  (best=0.4297)
