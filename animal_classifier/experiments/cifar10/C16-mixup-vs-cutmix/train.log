@@ -1,0 +1,12 @@
+C16 — Mixup vs CutMix Augmentation Comparison (CIFAR-10)
+============================================================
+Loading from cache ...
+Data: train=50000  test=10000
+
+=======================================================
+Augmentation: BASELINE  (alpha=1.0)
+  epochs=15  batch=256  lr=0.001
+=======================================================
+  epoch   1/15  loss=1.6473  train=0.5446  test=0.5807  (1419s)
+  epoch   2/15  loss=1.1024  train=0.6406  test=0.6615  (1455s)
+  epoch   3/15  loss=0.8885  train=0.7556  test=0.7839  (1420s)

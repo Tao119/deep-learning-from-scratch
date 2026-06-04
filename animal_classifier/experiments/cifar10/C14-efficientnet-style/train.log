@@ -1,0 +1,21 @@
+Loading CIFAR-10 ...
+Loading from cache ...
+train: (50000, 3, 32, 32)  test: (10000, 3, 32, 32)
+
+Building EfficientNet-style model ...
+  Compound Scaling:
+    width_coeff  = 1.20  (α=1.2, φ=1.0)
+    depth_coeff  = 1.10  (β=1.1, φ=1.0)
+    base channels: [32, 64, 128, 128, 256]
+    scaled channels: [38, 76, 154, 154, 308]
+    base depths: [1, 1, 2, 2, 2]
+    scaled depths: [2, 2, 3, 3, 3]
+    total DS-blocks: 8
+    (approx params counted via weight shapes)
+C14 - EfficientNet-style Compound Scaling / CIFAR-10
+width_coeff=1.20 (α=1.2), depth_coeff=1.10 (β=1.1), φ=1.0
+channels: [38, 76, 154, 154, 308]   depths: [2, 2, 3, 3, 3]
+epochs=30, batch=128, lr_max=0.001, lr_min=1e-05
+
+epoch   1/30: loss=1.4440  train=0.5573  test=0.5443  (2351s)
+epoch   2/30: loss=1.0500  train=0.6615  test=0.6510  (2312s)

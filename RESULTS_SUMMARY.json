@@ -89,12 +89,40 @@
       "top1": null,
       "top5": null,
       "status": "queued"
+    },
+    {
+      "id": "C13",
+      "model": "ViT (Vision Transformer)",
+      "aug": "mild",
+      "top1": 66.67,
+      "top5": null,
+      "status": "done",
+      "note": "Pure NumPy ViT: patch_size=4, d_model=64, 4 heads, 4 layers, d_ff=256, 30ep, best test_acc=66.67% @ep28-29"
+    },
+    {
+      "id": "C14",
+      "model": "EfficientNet-style (Compound Scaling)",
+      "aug": "mild",
+      "top1": null,
+      "top5": null,
+      "status": "running (2/30 ep done, test@ep2=65.1%)",
+      "note": "width_coeff=1.2, depth_coeff=1.1, phi=1.0, scaled channels: [38,76,154,154,308], depths: [2,2,3,3,3], very slow (~38min/epoch)"
+    },
+    {
+      "id": "C16",
+      "model": "VGGWithBN Baseline/Mixup/CutMix Comparison",
+      "aug": "mild+mixup+cutmix",
+      "top1": null,
+      "top5": null,
+      "status": "running (baseline 3/15 ep done, test@ep3=78.39%)",
+      "note": "Comparing baseline vs Mixup(alpha=0.4) vs CutMix(alpha=1.0), very slow (~23min/epoch)"
     }
   ],
   "key_findings": [
     "C02 VGGWithBN+BN best baseline: 90.58%",
     "C08 Mixup peak 91.9%@ep24 shows Mixup effective with LR decay",
     "C05 MobileNet lightweight: 85.4% at 1/4 params vs VGGWithBN",
-    "Augmentation: mild > none for large datasets (+3.2pt vs C04)"
+    "Augmentation: mild > none for large datasets (+3.2pt vs C04)",
+    "C13 Pure NumPy ViT: best 66.67% (30ep, patch=4, d=64, 4heads, cosine LR)"
   ]
 }
